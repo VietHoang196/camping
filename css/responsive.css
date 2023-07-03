@@ -17,7 +17,8 @@
         color: #111111;
         text-transform: capitalize;
         font-weight: bold;
-        margin: 0 40px;
+        margin: 0 30px;
+        padding: 10px;
     }
 
     header .hamburger {
@@ -33,11 +34,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-    }
-    
-    .banner h1 {
-        font-size: 3.75rem;
-        font-family: 'Playfair Display',serif;
     }
     
     .banner p {
@@ -70,10 +66,53 @@
 
     .about-us {
         grid-template: auto / 30% 1fr ;
-        padding: 90px;
+        grid-gap: 70px; 
+        padding: 90px 120px;
     }
 
-    .about-us .couple {
-        width: 100%;
+    .about-us .picture {
+        border: 10px solid #a79770;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .about-us .sub {
+        padding: 0 40px;
+        line-height: 90px;
+    }
+
+    .about-us h2 {
+        text-transform: capitalize;
+    }
+
+    .about-us p {
+        word-spacing: 3px;
+    }
+
+    .about-us a {
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        padding: 10px 26px;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-bottom: 32px;
+    }
+
+    .find-more {
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px;
+    }
+
+    .find-more p {
+        width: 50%;
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .find-more .category {
+        grid-template: auto / repeat(3, 1fr) ;
     }
 }

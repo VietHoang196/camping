@@ -8,7 +8,7 @@
     font-size: 18px;
 }
 
-image {
+.image {
     padding-top: 100%;
 	background: #ccc no-repeat center;
 	background-size: cover;
@@ -28,6 +28,12 @@ image {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.text-playfair {
+    font-family: 'Playfair Display',serif;
+    font-size: 3.75rem;
+    font-weight: 700;
 }
 
 .c-a79770 {
