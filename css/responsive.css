@@ -9,7 +9,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
-        padding: 5px 30px;
+        padding: 5px 80px;
     }
 
     header .sub-menu a{
@@ -24,26 +24,30 @@
         display: none;
     }
 
-    main .booking {
+    main .booking .banner {
         width: 100%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     
-    .booking h1 {
+    .banner h1 {
         font-size: 3.75rem;
         font-family: 'Playfair Display',serif;
     }
     
-    .booking p {
+    .banner p {
         width: 60%;
         text-align: center;
         font-weight: 600;
         margin: 16px 0;
     }
     
-    .booking a {
+    .banner a {
         font-weight: 700;
         letter-spacing: 1px;
         font-size: 0.875rem;
@@ -53,11 +57,23 @@
         margin-bottom: 32px;
     }
 
-    .booking .item {
+    .banner .info {
+        grid-template: auto / repeat(4 , 1fr) ;
+        grid-gap: 50px
+    }
+
+    .banner .info .item {
         padding: 50px;
-        max-width: 100%;
         text-align: center;
         border-radius: 22px;
-        margin: 0 30px;
+    }
+
+    .about-us {
+        grid-template: auto / 30% 1fr ;
+        padding: 90px;
+    }
+
+    .about-us .couple {
+        width: 100%;
     }
 }

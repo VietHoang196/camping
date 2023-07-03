@@ -8,6 +8,12 @@
     font-size: 18px;
 }
 
+image {
+    padding-top: 100%;
+	background: #ccc no-repeat center;
+	background-size: cover;
+}
+
 .image16-9 {
 	padding-top: 56.25%;
 	background: #ccc no-repeat center;
@@ -41,5 +47,5 @@
 }
 
 header .logo {
-    width: 180px;
+    width: 140px;
 }
