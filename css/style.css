@@ -55,3 +55,7 @@
 header .logo {
     width: 140px;
 }
+
+header .hamburger {
+    display: inline-block;
+}

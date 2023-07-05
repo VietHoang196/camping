@@ -114,5 +114,29 @@
 
     .find-more .category {
         grid-template: auto / repeat(3, 1fr) ;
+        grid-gap: 40px;
+    }
+
+    .find-more .item {
+        width: 19rem;
+        position: relative;
+    }
+
+    .find-more .sub-content {
+        position: absolute;
+        top: 74%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        opacity: 0.8;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .find-more .sub-content h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 }
