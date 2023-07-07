@@ -1,10 +1,4 @@
 @media (min-width: 768px) {
-    .container {
-        display: block;
-        max-width: 1366px;
-        margin: 0 auto;
-    }
-
     header {
         justify-content: space-between;
         align-items: center;
@@ -40,28 +34,30 @@
         width: 60%;
         text-align: center;
         font-weight: 600;
-        margin: 16px 0;
+        margin: 14px 0 38px;
     }
     
     .banner a {
         font-weight: 700;
         letter-spacing: 1px;
         font-size: 0.875rem;
-        padding: 10px 26px;
+        padding: 16px 26px;
         text-decoration: none;
         border-radius: 20px;
-        margin-bottom: 32px;
+        margin-bottom: 60px;
     }
 
     .banner .info {
         grid-template: auto / repeat(4 , 1fr) ;
-        grid-gap: 50px
+        grid-gap: 50px;
     }
 
     .banner .info .item {
         padding: 50px;
         text-align: center;
         border-radius: 22px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.3)
     }
 
     .about-us {
@@ -93,11 +89,14 @@
         font-weight: 700;
         letter-spacing: 1px;
         font-size: 0.875rem;
-        padding: 10px 26px;
+        padding: 16px 26px;
         text-decoration: none;
         border-radius: 20px;
         margin-bottom: 32px;
     }
+
+
+
 
     .find-more {
         justify-content: space-around;
@@ -109,7 +108,7 @@
     .find-more p {
         width: 50%;
         text-align: center;
-        margin: 24px 0;
+        margin: 8px 0 52px
     }
 
     .find-more .category {
@@ -120,6 +119,8 @@
     .find-more .item {
         width: 19rem;
         position: relative;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
     .find-more .sub-content {
@@ -128,8 +129,10 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #000000;
-        opacity: 0.8;
+        /* background-color: #000000;
+        opacity: 0.8; */
+        backdrop-filter: blur(2px);
+        background-color: rgba(255, 255, 255, 0.3);
         justify-content: center;
         align-items: center;
     }
@@ -138,5 +141,86 @@
         font-size: 1.3rem;
         font-weight: 600;
         text-transform: uppercase;
+    }
+
+
+
+
+    footer .content {
+        padding: 0 6.8em;
+        width: 100%;
+        grid-template: auto / 1fr 1fr;
+        grid-gap: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    footer .sub-info {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    footer h2 {
+        font-size: 3.75rem;
+        font-family: 'Playfair Display',serif;
+        font-weight: 700;
+    }
+
+    .sub-form {
+        justify-content: space-between;
+    }
+    
+    .mes p,
+    .sub-form p {
+        margin-bottom: 5px;
+        color: #8f929e;
+        letter-spacing: 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    
+    .sub-form input {
+        margin-bottom: 18px;
+        padding: 10px 15px;
+        border: 1px #e4e4e4;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        font-size: 15px;
+        line-height: 26px
+    }
+    
+    .mes textarea {
+        margin-bottom: 18px;
+        padding: 10px 15px;
+        resize: vertical;
+        border-radius: 8px;
+        background-color: hsla(0,0%,100%,.5);
+        font-size: 15px;
+        line-height: 26px;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+    }
+    
+    .btn {
+        padding: 14px 30px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    header .sub-menu {
+        display: none;
     }
 }
