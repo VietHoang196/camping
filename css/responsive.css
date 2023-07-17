@@ -170,52 +170,51 @@
         font-weight: 700;
     }
 
-    .sub-form {
-        justify-content: space-between;
+    .form .sub-form {
+        grid-template: auto / 1fr 1fr ;
+        grid-gap: 40px;
     }
     
     .mes p,
-    .sub-form p {
+    .form .sub-form p {
         margin-bottom: 5px;
-        color: #8f929e;
+        color: #fff;
         letter-spacing: 0;
-        font-size: 12px;
         line-height: 20px;
-        font-weight: bold;
     }
     
-    .sub-form input {
+    .form .sub-form input {
+        width: 16.938em;
         margin-bottom: 18px;
         padding: 10px 15px;
         border: 1px #e4e4e4;
         border-radius: 8px;
-        background-color: hsla(0,0%,100%,.5);
+        background-color: hsla(0,0%,100%,.7);
         font-size: 15px;
-        line-height: 26px
+        line-height: 26px;
     }
     
-    .mes textarea {
+    .form .mes textarea {
         margin-bottom: 18px;
         padding: 10px 15px;
         resize: vertical;
         border-radius: 8px;
-        background-color: hsla(0,0%,100%,.5);
+        background-color: hsla(0,0%,100%,.7);
         font-size: 15px;
         line-height: 26px;
         font-family: 'Poppins', sans-serif;
         border: none;
     }
     
-    .btn {
-        padding: 14px 30px;
-        color: #fff;
-        background-color: #000;
-        border-radius: 10px;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: bold;
-        letter-spacing: 0;
+    .form .btn {
+        width: 100%;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        padding: 16px 26px;
+        border-radius: 20px;
         border: none;
+        cursor: pointer;
     }
 }
 
