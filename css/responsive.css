@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
-    header {
+    header .container {
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         background-color: #fff;
@@ -146,7 +147,7 @@
 
 
 
-    footer .content {
+    .contact .content {
         padding: 0 6.8em;
         width: 100%;
         grid-template: auto / 1fr 1fr;
@@ -157,18 +158,30 @@
         transform: translate(-50%,-50%);
     }
 
-    footer .sub-info {
+    .contact .sub-info {
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: column;
         color: #fff;
     }
 
-    footer h2 {
+    .contact h2 {
         font-size: 3.75rem;
         font-family: 'Playfair Display',serif;
         font-weight: 700;
     }
+
+    .contact p {
+        margin-bottom: 0.5em;
+    }
+
+    .contact .social i{
+        color: #fff;
+        margin-right: 0.8em;
+        font-size: 1.5em;
+    }
+
+
 
     .form .sub-form {
         grid-template: auto / 1fr 1fr ;
