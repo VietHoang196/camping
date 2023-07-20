@@ -29,9 +29,17 @@ footer();
 
 function handle_mobile_nav() {
     let btn = document.querySelector('#nav-trigger'),
-        nav = document.querySelector('.header_page .sub-menu');
+        nav = document.querySelector('.header_page .sub-menu'),
+        overlay = document.createElement('div');
+    overlay.classList.add('overlay');
     btn.addEventListener('click', function() {
         nav.classList.toggle('show');
+        document.body.appendChild(overlay);
     });
+
+    overlay.addEventListener('click', function(e) {
+        e.target.remove();
+        nav.classList.remove('show');
+    })
 }
 handle_mobile_nav();

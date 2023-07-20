@@ -188,5 +188,7 @@
         box-shadow: none;
     }
 
-    
+    .overlay {
+        display: none;
+    }
 }
