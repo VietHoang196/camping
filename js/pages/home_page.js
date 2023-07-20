@@ -12,28 +12,28 @@ export async function home_page() {
                         <di class="info c-white grid">
                             <div class="item">
                                 <span>
-                                    <img src="./img/icon/trekking.png" style="width: 50%;">
+                                    <img src="./img/icon/trekking.png";">
                                 </span>
                                 <h4 class="uppercase">trekking</h4>
                             </div>
         
                             <div class="item">
                                 <span>
-                                    <img src="./img/icon/camping.png" style="width: 50%;">
+                                    <img src="./img/icon/camping.png";">
                                 </span>
                                 <h4 class="uppercase">camping</h4>
                             </div>
         
                             <div class="item">
                                 <span>
-                                    <img src="./img/icon/beachtent.png" style="width: 50%;">
+                                    <img src="./img/icon/beachtent.png";">
                                 </span>
                                 <h4 class="uppercase">beach tents</h4>
                             </div>
         
                             <div class="item">
                                 <span>
-                                    <img src="./img/icon/news.png" style="width: 50%;">
+                                    <img src="./img/icon/news.png";">
                                 </span>
                                 <h4 class="uppercase">news & events</h4>
                             </div>

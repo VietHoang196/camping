@@ -6,7 +6,7 @@ export async function footer_page() {
         <div class="content grid">
             <div class="sub-info flex">
                 <h2>Contact Us</h2>
-                <p>If you would like to contact us regarding the camping site, we would be happy to assist you. Please provide us with your preferred method of contact (phone, email, etc.) and any specific questions or concerns you may have.</p>
+                <p class="note">If you would like to contact us regarding the camping site, we would be happy to assist you. Please provide us with your preferred method of contact (phone, email, etc.) and any specific questions or concerns you may have.</p>
                 <p>Address: New York City</p>
                 <p>Hotline: 0978648283</p>
                 <p>Email: campingseason@gmail.com</p>

@@ -32,7 +32,7 @@
 
 .text-playfair {
     font-family: 'Playfair Display',serif;
-    font-size: 3.75rem;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -52,6 +52,279 @@
     display: grid;
 }
 
+header .container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 50px;
+}
+
+header .hamburger {
+    padding: 1em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .hamburger i{
+    font-size: 1.5em;
+}
+
 header .logo {
     width: 8.75em;
+}
+
+header .sub-menu a{
+    text-decoration: none;
+    color: #111111;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+main .booking {
+    padding-top: 100%;
+}
+
+main .booking .banner {
+    padding: 0 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-top: -0.5em;
+}
+
+.banner p {
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    margin: 14px 0 38px;
+}
+
+.banner a {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    padding: 16px 26px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+.banner .info {
+    grid-template: auto / repeat(4 , 1fr) ;
+    grid-gap: 25px;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.banner .info .item {
+    padding: 20px;
+    text-align: center;
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3)
+}
+
+.banner h4 {
+    font-size: 0.6em;
+}
+
+.about-us {
+    grid-template: auto / 1fr 1fr ;
+    grid-gap: 30px; 
+    padding: 90px 20px;
+}
+
+.about-us .picture {
+    border: 10px solid #a79770;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.about-us .sub {
+    line-height: 30px;
+    display: inline-block;
+}
+
+.about-us h2 {
+    text-transform: capitalize;
+    font-size: 2.5rem
+}
+
+.about-us p {
+    word-spacing: 1px;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.about-us a {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    padding: 16px 26px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.find-more {
+    display: inline-block;
+    padding: 90px 20px;
+}
+
+.find-more h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.find-more p {
+    width: 100%;
+    text-align: center;
+    margin: 8px 0 52px
+}
+
+.find-more .category {
+    grid-template: auto / repeat(2, 1fr) ;
+    grid-gap: 40px;
+}
+
+.find-more .item {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.find-more .sub-content {
+    position: absolute;
+    top: 74%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.find-more .sub-content h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact .content {
+    padding: 0px 20px;
+    width: 100%;
+    grid-template: auto / 1fr 1fr;
+    grid-gap: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contact .sub-info {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contact .note {
+    display: none;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+}
+
+.contact p {
+    margin-bottom: 0.5em;
+}
+
+.contact .social i{
+    color: #fff;
+    margin-right: 0.8em;
+    font-size: 1.3em;
+}
+
+.mes p,
+.form .sub-form p {
+    margin: 8px 0;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.form .sub-form input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px #e4e4e4;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.7);
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.form .mes textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 10px 15px;
+    resize: vertical;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.7);
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.form .btn {
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.header_page .sub-menu {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 4px 0 10px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: none;
+}
+
+.header_page .sub-menu.show {
+    display: block;
+}
+
+.header_page .sub-menu a{
+    margin: 10px;
+    padding: 5px;
+}
+
+.header_page .sub-menu a:first-child {
+    margin-top: 6em;
 }

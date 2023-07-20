@@ -26,3 +26,12 @@ async function footer() {
 }
 
 footer();
+
+function handle_mobile_nav() {
+    let btn = document.querySelector('#nav-trigger'),
+        nav = document.querySelector('.header_page .sub-menu');
+    btn.addEventListener('click', function() {
+        nav.classList.toggle('show');
+    });
+}
+handle_mobile_nav();

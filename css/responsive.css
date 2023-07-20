@@ -1,55 +1,54 @@
 @media (min-width: 768px) {
     header .container {
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
         padding: 5px 80px;
     }
 
     header .sub-menu a{
-        text-decoration: none;
-        color: #111111;
-        text-transform: capitalize;
-        font-weight: bold;
         margin: 0 30px;
         padding: 10px;
+    }
+
+    header .sub-menu {
+        display: block;
     }
 
     header .hamburger {
         display: none;
     }
 
+    main .booking {
+        padding-top: 56.25%;
+    }
+
     main .booking .banner {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        padding: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
+    .banner h1 {
+        font-size: 3.75rem;
+        margin: 0;
+    }
     
     .banner p {
-        width: 60%;
         text-align: center;
         font-weight: 600;
+        width: 60%;
         margin: 14px 0 38px;
     }
     
     .banner a {
-        font-weight: 700;
-        letter-spacing: 1px;
         font-size: 0.875rem;
-        padding: 16px 26px;
-        text-decoration: none;
-        border-radius: 20px;
-        margin-bottom: 60px;
+    }
+
+    .banner img {
+        width: 50%;
     }
 
     .banner .info {
-        grid-template: auto / repeat(4 , 1fr) ;
         grid-gap: 50px;
     }
 
@@ -59,6 +58,10 @@
         border-radius: 22px;
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.3)
+    }
+
+    .banner h4 {
+        font-size: 18px;
     }
 
     .about-us {
@@ -71,6 +74,7 @@
         border: 10px solid #a79770;
         overflow: hidden;
         border-radius: 50%;
+        width: 100%;
     }
 
     .about-us .sub {
@@ -79,37 +83,35 @@
     }
 
     .about-us h2 {
-        text-transform: capitalize;
+        font-size: 3.75rem
     }
 
     .about-us p {
         word-spacing: 3px;
+        font-size: 18px;
+        margin-bottom: 0;
     }
 
     .about-us a {
-        font-weight: 700;
-        letter-spacing: 1px;
         font-size: 0.875rem;
-        padding: 16px 26px;
-        text-decoration: none;
-        border-radius: 20px;
-        margin-bottom: 32px;
     }
 
 
-
-
     .find-more {
+        display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
         padding: 60px;
     }
 
+    .find-more h2 {
+        font-size: 3.75rem;
+        margin-top: 0;
+    }
+
     .find-more p {
         width: 50%;
-        text-align: center;
-        margin: 8px 0 52px
     }
 
     .find-more .category {
@@ -119,43 +121,14 @@
 
     .find-more .item {
         width: 19rem;
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-
-    .find-more .sub-content {
-        position: absolute;
-        top: 74%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        /* background-color: #000000;
-        opacity: 0.8; */
-        backdrop-filter: blur(2px);
-        background-color: rgba(255, 255, 255, 0.3);
-        justify-content: center;
-        align-items: center;
     }
 
     .find-more .sub-content h4 {
         font-size: 1.3rem;
-        font-weight: 600;
-        text-transform: uppercase;
     }
-
-
-
-
-    .contact .content {
+    
+    .contact .content{
         padding: 0 6.8em;
-        width: 100%;
-        grid-template: auto / 1fr 1fr;
-        grid-gap: 40px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
     }
 
     .contact .sub-info {
@@ -165,10 +138,12 @@
         color: #fff;
     }
 
+    .contact .note {
+        display: inline-block;
+    }
+
     .contact h2 {
         font-size: 3.75rem;
-        font-family: 'Playfair Display',serif;
-        font-weight: 700;
     }
 
     .contact p {
@@ -176,12 +151,8 @@
     }
 
     .contact .social i{
-        color: #fff;
-        margin-right: 0.8em;
         font-size: 1.5em;
     }
-
-
 
     .form .sub-form {
         grid-template: auto / 1fr 1fr ;
@@ -190,49 +161,32 @@
     
     .mes p,
     .form .sub-form p {
+        margin: 0;
         margin-bottom: 5px;
-        color: #fff;
-        letter-spacing: 0;
-        line-height: 20px;
     }
     
     .form .sub-form input {
         width: 16.938em;
         margin-bottom: 18px;
         padding: 10px 15px;
-        border: 1px #e4e4e4;
-        border-radius: 8px;
-        background-color: hsla(0,0%,100%,.7);
-        font-size: 15px;
         line-height: 26px;
     }
     
     .form .mes textarea {
-        margin-bottom: 18px;
-        padding: 10px 15px;
-        resize: vertical;
-        border-radius: 8px;
-        background-color: hsla(0,0%,100%,.7);
-        font-size: 15px;
         line-height: 26px;
-        font-family: 'Poppins', sans-serif;
-        border: none;
     }
     
     .form .btn {
-        width: 100%;
-        font-weight: 700;
-        letter-spacing: 1px;
-        font-size: 0.875rem;
-        padding: 16px 26px;
         border-radius: 20px;
-        border: none;
-        cursor: pointer;
+        padding: 16px 26px;
     }
-}
 
-@media (max-width: 767px) {
-    header .sub-menu {
-        display: none;
+    .header_page .sub-menu {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
     }
+
+    
 }

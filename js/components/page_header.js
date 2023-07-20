@@ -12,7 +12,7 @@ export async function header_page() {
                 <a href="#">booking</a>
                 <a href="#">about us</a>
             </div>
-            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <button id="nav-trigger" class="hamburger"><i class="fa-solid fa-bars"></i></button>
         </div>
     `;
     return template;
