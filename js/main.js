@@ -7,17 +7,6 @@ async function header() {
     app.appendChild(await render);
 }
 
-header();
-
-async function init_app() {
-    let page = await import('./pages/home_page.js');
-    let render = await page.home_page();
-
-    app.appendChild(await render);
-}
-
-init_app();
-
 async function footer() {
     let page = await import('./components/page_footer.js');
     let render = await page.footer_page();
@@ -25,7 +14,16 @@ async function footer() {
     app.appendChild(await render);
 }
 
-footer();
+async function init_app() {
+    let page = await import('./pages/home_page.js');
+    let render = await page.home_page();
+    await header();
+    app.appendChild(await render);
+    await footer();
+}
+
+init_app();
+
 
 function handle_mobile_nav() {
     let btn = document.querySelector('#nav-trigger'),
